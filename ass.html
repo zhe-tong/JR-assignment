@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ass1</title>
+        <style>
+            /* CSS Reset */
+            html, body {
+                height: 100%;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to top,gray,white);
+            }
+            /* Form Styles */
+            form {
+                width: 90%;
+                max-width: 600px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+            /* h1 styles */
+            h1 {
+                text-align: center;
+                padding: 10px;
+                color: #333;
+            }
+            /* container styles */
+            div {
+                margin-bottom: 15px;
+            }
+            /* label styles */
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+                color: #333;
+            }
+            /* text input styles */
+            textarea {
+                height: 100px;
+                resize: none;
+            }
+            /* submit button styles */
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: white;
+                border-radius: 5px;
+                font-size: 15px;
+            }
+            /* submit button hover styles */
+            input[type="submit"]:hover {
+                background-color: gray;
+                transform: scale(1.1);
+            }
+            /* Responsive Design for width small screens */
+            @media (max-width: 480px) {
+                form {
+                    padding: 15px;
+                }
+
+                label {
+                    font-size: 14px;
+                }
+
+                input[type="text"],
+                input[type="email"],
+                input[type="password"],
+                input[type="date"],
+                textarea,
+                select {
+                    font-size: 14px;
+                }
+
+                input[type="submit"] {
+                    font-size: 16px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Registration Form</h1>
+        <form action="./success.html">
+            <!-- First Name -->
+             <div>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <!-- Last Name -->
+             <div>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+             </div>
+            <!-- Email Address -->
+             <div>
+                <label for="email-address">Email Address:</label>
+                <input type="email" id="email-address" name="email-address" placeholder="Enter your email" required>
+             </div>
+            <!-- Password -->
+             <div>
+                <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="10" placeholder="Password with 8 to 10 characters" autocomplete="off">
+             </div>
+            <!-- Confirm Password -->
+             <div>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required minlength="8" maxlength="10" placeholder="Confirm your password" autocomplete="off">
+             </div>
+            <!-- date of birth -->
+            <div>
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+            </div>
+            <!-- Gender -->
+            <div>
+                <label>Gender:</label>
+                <label><input type="radio" id="male" name="gender" value="male" required>male</label>
+                <label><input type="radio" id="female" name="gender" value="female">female</label>           
+                <label><input type="radio" id="other" name="gender" value="other">other</label>
+            </div>
+            <!-- about me -->
+            <div>
+                <label for="about-me">About Me:</label>
+                <textarea id="about-me" name="about-me"></textarea>
+            </div>
+            <!-- choose your porfession -->
+            <div>
+                <label for="choose your porfession">Choose your porfession:</label>
+                <select id="choose your porfession" name="choose your porfession">
+                    <option value="1">Web Developer</option>
+                    <option value="3">Data Analystic</option>
+                    <option value="4">UI/UX Design</option>
+                    <option value="5">AI Engineer</option>
+                </select>
+            </div>
+            <!-- submit button -->
+            <div>
+                <input type="submit" value="Submit">
+                
+            </div>
+
+
+        </form>
+    </body>
+</html>
