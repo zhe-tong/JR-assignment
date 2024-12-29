@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top,gray,white);
+}
+/* Form Styles */
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+/* h1 styles */
+h1 {
+    text-align: center;
+    padding: 10px;
+    color: #333;
+}
+/* container styles */
+div {
+    margin-bottom: 15px;
+}
+/* label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+/* text input styles */
+textarea {
+    height: 100px;
+    resize: none;
+}
+/* submit button styles */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+/* submit button hover styles */
+input[type="submit"]:hover {
+    background-color: gray;
+    transform: scale(1.1);
+}
+/* Responsive Design for width small screens */
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    textarea,
+    select {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
