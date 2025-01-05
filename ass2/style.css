@@ -27,13 +27,13 @@ body {
     border-radius: 10px;
 }
 .card:nth-child(1) {
-    background-image: linear-gradient(to bottom right, rgba(75, 123, 235, 0.99), rgba(246, 90, 241, 0.516)), url(./card1.jpg);
+    background-image: linear-gradient(to bottom right, rgba(75, 123, 235, 0.99), rgba(246, 90, 241, 0.516)), url(./public/card1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .card:nth-child(2) {
-    background-image: linear-gradient(to bottom right, rgba(48, 114, 244, 0.99), rgba(96, 244, 153, 0.451)), url(./card2.jpg);
+    background-image: linear-gradient(to bottom right, rgba(48, 114, 244, 0.99), rgba(96, 244, 153, 0.451)), url(./public/card2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
