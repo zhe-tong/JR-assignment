@@ -3,7 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-#container{
+#container1{
     width: 80%;
     height: 20%;
     display: flex;
@@ -15,6 +15,21 @@ body {
     border-style: solid;
     border-color: #e3e3e3;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container2{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1px;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: #e3e3e3;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .card{
     position: relative;
@@ -26,20 +41,33 @@ body {
     padding: 4%;
     border-radius: 10px;
 }
-.card:nth-child(1) {
+#container1 .card:nth-child(1) {
     background-image: linear-gradient(to bottom right, rgba(75, 123, 235, 0.99), rgba(246, 90, 241, 0.516)), url(./public/card1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.card:nth-child(2) {
+#container1 .card:nth-child(2) {
     background-image: linear-gradient(to bottom right, rgba(48, 114, 244, 0.99), rgba(96, 244, 153, 0.451)), url(./public/card2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+#container2 .card:nth-child(1) {
+    padding: 4%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#container2 .card:nth-child(1) span {
+    color: gold;
+}
+#container2 .card:nth-child(2) {
+    padding: 4%;
+    background: linear-gradient(to bottom right, rgba(75, 123, 235, 0.99), rgba(246, 90, 241, 0.3));
+    color: #fff;
+}
 .card:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.1); /* 增加阴影的强度和层次 */
+    transform: translateY(-5px);
 }
 .card-title{
     font-weight: 600;
@@ -57,6 +85,7 @@ body {
 }
 .card-button {
     width: 36%;
+    aspect-ratio: 3 / 1;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0);
     font-size: 1rem;
@@ -71,11 +100,55 @@ body {
 .card-button:hover{
     background-color: rgba(0, 0, 0, 0.24);
 }
+.icon {
+    width: 80%;
+    border-radius: 50%;
+}
+.card-header {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+.stars {
+    display: inline-flex;
+}
+.star {
+    font-size: 0.8rem;
+    margin-right: 5px;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+a:link{
+    color: skyblue;
+}
+a:visited{
+    color: skyblue;
+}
 @media (max-width: 768px) {
-    .container {
+    #container1 {
         flex-direction: column;
     }
+    #container2 {
+        flex-direction: column;   
+    }
     .card {
-        width: 100%;
+        width: 90%;
+    }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+    #container1 {
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 15px;
+    }
+    #container2 {
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 15px;
+    }
+    .card {
+        width: 48%;
+        margin: 10px 1%;
     }
 }
