@@ -3,8 +3,8 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-#container1,
-#container2 {
+#container-style-one,
+#container-style-two {
     width: 80%;
     height: 20%;
     display: flex;
@@ -28,26 +28,26 @@ body {
     padding: 4%;
     border-radius: 10px;
 }
-#container1 .card:nth-child(1) {
+#container-style-one .card:nth-child(1) {
     background-image: linear-gradient(to bottom right, rgba(75, 123, 235, 0.99), rgba(246, 90, 241, 0.516)), url(./public/card1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-#container1 .card:nth-child(2) {
+#container-style-one .card:nth-child(2) {
     background-image: linear-gradient(to bottom right, rgba(48, 114, 244, 0.99), rgba(96, 244, 153, 0.451)), url(./public/card2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-#container2 .card:nth-child(1) {
+#container-style-two .card:nth-child(1) {
     padding: 4%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#container2 .card:nth-child(1) span {
+#container-style-two .card:nth-child(1) span {
     color: gold;
 }
-#container2 .card:nth-child(2) {
+#container-style-two .card:nth-child(2) {
     padding: 4%;
     background: linear-gradient(to bottom right, rgba(75, 123, 235, 0.99), rgba(246, 90, 241, 0.3));
     color: #fff;
@@ -87,7 +87,7 @@ body {
 .card-button:hover{
     background-color: rgba(0, 0, 0, 0.24);
 }
-.icon {
+.card-icon {
     width: 80%;
     border-radius: 50%;
 }
@@ -95,10 +95,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
 }
-.stars {
+.card-stars {
     display: inline-flex;
 }
-.star {
+.card-star {
     font-size: 0.8rem;
     margin-right: 5px;
     position: relative;
@@ -113,8 +113,8 @@ a:visited {
     color: skyblue;
 }
 @media (max-width: 768px) {
-    #container1,
-    #container2 {
+    #container-style-one,
+    #container-style-two {
         flex-direction: column;
     }
     .card {
@@ -122,8 +122,8 @@ a:visited {
     }
 }
 @media (max-width: 1024px) and (min-width: 769px) {
-    #container1,
-    #container2 {
+    #container-style-one,
+    #container-style-two {
         flex-wrap: wrap;
         width: 90%;
         padding: 15px;
@@ -134,8 +134,8 @@ a:visited {
     }
 }
 @media (min-width: 1460px) {
-    #container1,
-    #container2 {
+    #container-style-one,
+    #container-style-two {
         width: 1460px;
         margin: 0 auto;
     }
