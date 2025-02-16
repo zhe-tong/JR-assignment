@@ -11,10 +11,8 @@ function TaskList({tasks}) {
     </div>
 );
 }
-
 function App() {
   const [tasks, setTask] = useState([]);
-
   const addTask = (newTask) => {
       setTask([...tasks, newTask]);
   };
@@ -31,8 +29,5 @@ function App() {
     
   );
 }
-
-
-
 
 export default App;

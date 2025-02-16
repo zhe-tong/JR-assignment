@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 function Task({ text }) {
   const [isCompleted, setIsCompleted] = useState(false);
-
   const toggleTask = () => {
     setIsCompleted(!isCompleted);
   };
